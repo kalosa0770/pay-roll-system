@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Payslip</title>
+    <style>
+        /* CSS for styling the payslip */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            color: #127eb4;
+        }
+        .pay-slip {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: black;
+            color: white;
+            margin-bottom: 6px;
+            border-radius: 8px;
+        }
+        .payslip {
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 300px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            font-weight: bold;
+        }
+        .employee-info {
+            margin-bottom: 20px;
+        }
+        .deductions {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Employee Payslips</h1>
+    <div class="pay-slip">
+        <div class="payslip">
+            <div class="employee-info">
+                <p><strong>Employee Name:</strong> John Kaluba</p>
+                <p><strong>Employee ID:</strong> 12345</p>
+                <p><strong>Payment Date:</strong> September 1, 2023</p>
+            </div>
+            <div class="earnings">
+                <p><strong>Earnings:</strong></p>
+                <ul>
+                    <li>Basic Salary: $5,000</li>
+                    <li>Overtime: $500</li>
+                    <!-- Add more earnings items as needed -->
+                </ul>
+            </div>
+            <div class="deductions">
+                <p><strong>Deductions:</strong></p>
+                <ul>
+                    <li>Taxes: $1,200</li>
+                    <li>Health Insurance: $100</li>
+                    <!-- Add more deduction items as needed -->
+                </ul>
+            </div>
+            <div class="total">
+                <p><strong>Total Payment:</strong> $4,200</p>
+            </div>
+        </div>
+    
+        <div class="payslip">
+            <div class="employee-info">
+                <p><strong>Employee Name:</strong> Emile Kafwani</p>
+                <p><strong>Employee ID:</strong> 46893</p>
+                <p><strong>Payment Date:</strong> September 1, 2023</p>
+            </div>
+            <div class="earnings">
+                <p><strong>Earnings:</strong></p>
+                <ul>
+                    <li>Basic Salary: K8,000</li>
+                    <li>Overtime: K500</li>
+                    <!-- Add more earnings items as needed -->
+                </ul>
+            </div>
+            <div class="deductions">
+                <p><strong>Deductions:</strong></p>
+                <ul>
+                    <li>Taxes: K800</li>
+                    <li>Health Insurance: K300</li>
+                    <!-- Add more deduction items as needed -->
+                </ul>
+            </div>
+            <div class="total">
+                <p><strong>Total Payment:</strong> $7,400</p>
+            </div>
+        </div>
+
+        <div class="payslip">
+            <div class="employee-info">
+                <p><strong>Employee Name:</strong> David Chileshe</p>
+                <p><strong>Employee ID:</strong> 46463</p>
+                <p><strong>Payment Date:</strong> September 1, 2023</p>
+            </div>
+            <div class="earnings">
+                <p><strong>Earnings:</strong></p>
+                <ul>
+                    <li>Basic Salary: K8,500</li>
+                    <li>Overtime: K1000</li>
+                    <!-- Add more earnings items as needed -->
+                </ul>
+            </div>
+            <div class="deductions">
+                <p><strong>Deductions:</strong></p>
+                <ul>
+                    <li>Taxes: K800</li>
+                    <li>Health Insurance: K300</li>
+                    <!-- Add more deduction items as needed -->
+                </ul>
+            </div>
+            <div class="total">
+                <p><strong>Total Payment:</strong> $7,900</p>
+            </div>
+        </div>
+
+        <div class="payslip">
+            <div class="employee-info">
+                <p><strong>Employee Name:</strong> Elijah Kalosa</p>
+                <p><strong>Employee ID:</strong> 83126</p>
+                <p><strong>Payment Date:</strong> 28 August, 2023</p>
+            </div>
+            <div class="earnings">
+                <p><strong>Earnings:</strong></p>
+                <ul>
+                    <li>Basic Salary: K18,000</li>
+                    <li>Overtime: K8000</li>
+                    <!-- Add more earnings items as needed -->
+                </ul>
+            </div>
+            <div class="deductions">
+                <p><strong>Deductions:</strong></p>
+                <ul>
+                    <li>Taxes: K800</li>
+                    <li>Health Insurance: K300</li>
+                    <!-- Add more deduction items as needed -->
+                </ul>
+            </div>
+            <div class="total">
+                <p><strong>Total Payment:</strong> $17,400</p>
+            </div>
+        </div>
+
+        <div class="payslip">
+            <div class="employee-info">
+                <p><strong>Employee Name:</strong> John Mbewe</p>
+                <p><strong>Employee ID:</strong> 448904</p>
+                <p><strong>Payment Date:</strong> September 1, 2023</p>
+            </div>
+            <div class="earnings">
+                <p><strong>Earnings:</strong></p>
+                <ul>
+                    <li>Basic Salary: K8,000</li>
+                    <li>Overtime: K500</li>
+                    <!-- Add more earnings items as needed -->
+                </ul>
+            </div>
+            <div class="deductions">
+                <p><strong>Deductions:</strong></p>
+                <ul>
+                    <li>Taxes: K800</li>
+                    <li>Health Insurance: K300</li>
+                    <!-- Add more deduction items as needed -->
+                </ul>
+            </div>
+            <div class="total">
+                <p><strong>Total Payment:</strong> $7,400</p>
+            </div>
+        </div>
+
+        <div class="payslip">
+            <div class="employee-info">
+                <p><strong>Employee Name:</strong> Brian Khondowe</p>
+                <p><strong>Employee ID:</strong> 088124</p>
+                <p><strong>Payment Date:</strong> September 3, 2023</p>
+            </div>
+            <div class="earnings">
+                <p><strong>Earnings:</strong></p>
+                <ul>
+                    <li>Basic Salary: K13,000</li>
+                    <li>Overtime: K800</li>
+                    <!-- Add more earnings items as needed -->
+                </ul>
+            </div>
+            <div class="deductions">
+                <p><strong>Deductions:</strong></p>
+                <ul>
+                    <li>Taxes: K800</li>
+                    <li>Health Insurance: K300</li>
+                    <!-- Add more deduction items as needed -->
+                </ul>
+            </div>
+            <div class="total">
+                <p><strong>Total Payment:</strong> $12,400</p>
+            </div>
+        </div>
+        <div class="payslip">
+            <div class="employee-info">
+                <p><strong>Employee Name:</strong> kipoka kasongo</p>
+                <p><strong>Employee ID:</strong> 023124</p>
+                <p><strong>Payment Date:</strong> August 3, 2023</p>
+            </div>
+            <div class="earnings">
+                <p><strong>Earnings:</strong></p>
+                <ul>
+                    <li>Basic Salary: K11,000</li>
+                    <li>Overtime: K700</li>
+                    <!-- Add more earnings items as needed -->
+                </ul>
+            </div>
+            <div class="deductions">
+                <p><strong>Deductions:</strong></p>
+                <ul>
+                    <li>Taxes: K800</li>
+                    <li>Health Insurance: K300</li>
+                    <!-- Add more deduction items as needed -->
+                </ul>
+            </div>
+            <div class="total">
+                <p><strong>Total Payment:</strong> $12,400</p>
+            </div>
+        </div>
+        <div class="payslip">
+            <div class="employee-info">
+                <p><strong>Employee Name:</strong> Mwamba Fiston</p>
+                <p><strong>Employee ID:</strong> 054674</p>
+                <p><strong>Payment Date:</strong> july 8, 2023</p>
+            </div>
+            <div class="earnings">
+                <p><strong>Earnings:</strong></p>
+                <ul>
+                    <li>Basic Salary: K7,500</li>
+                    <li>Overtime: K800</li>
+                    <!-- Add more earnings items as needed -->
+                </ul>
+            </div>
+            <div class="deductions">
+                <p><strong>Deductions:</strong></p>
+                <ul>
+                    <li>Taxes: K800</li>
+                    <li>Health Insurance: K300</li>
+                    <!-- Add more deduction items as needed -->
+                </ul>
+            </div>
+            <div class="total">
+                <p><strong>Total Payment:</strong> $8,400</p>
+            </div>
+        </div>
+        <div class="payslip">
+            <div class="employee-info">
+                <p><strong>Employee Name:</strong> Mwelwa clement</p>
+                <p><strong>Employee ID:</strong> 354474</p>
+                <p><strong>Payment Date:</strong> December 8, 2023</p>
+            </div>
+            <div class="earnings">
+                <p><strong>Earnings:</strong></p>
+                <ul>
+                    <li>Basic Salary: K8,500</li>
+                    <li>Overtime: K500</li>
+                    <!-- Add more earnings items as needed -->
+                </ul>
+            </div>
+            <div class="deductions">
+                <p><strong>Deductions:</strong></p>
+                <ul>
+                    <li>Taxes: K800</li>
+                    <li>Health Insurance: K300</li>
+                    <!-- Add more deduction items as needed -->
+                </ul>
+            </div>
+            <div class="total">
+                <p><strong>Total Payment:</strong> $9,000</p>
+    </div>
+</div>
+<div class="payslip">
+    <div class="employee-info">
+        <p><strong>Employee Name:</strong> Kafwelu manson</p>
+        <p><strong>Employee ID:</strong> 352374</p>
+        <p><strong>Payment Date:</strong> December 2, 2023</p>
+    </div>
+    <div class="earnings">
+        <p><strong>Earnings:</strong></p>
+        <ul>
+            <li>Basic Salary: K8,000</li>
+            <li>Overtime: K300</li>
+            <!-- Add more earnings items as needed -->
+        </ul>
+    </div>
+    <div class="deductions">
+        <p><strong>Deductions:</strong></p>
+        <ul>
+            <li>Taxes: K800</li>
+            <li>Health Insurance: K300</li>
+            <!-- Add more deduction items as needed -->
+        </ul>
+    </div>
+    <div class="total">
+        <p><strong>Total Payment:</strong> $11,000</p>
+    </div>
+</div>
+<div class="payslip">
+    <div class="employee-info">
+        <p><strong>Employee Name:</strong> Mambwe Joseph</p>
+        <p><strong>Employee ID:</strong> 042374</p>
+        <p><strong>Payment Date:</strong> october 2, 2023</p>
+    </div>
+    <div class="earnings">
+        <p><strong>Earnings:</strong></p>
+        <ul>
+            <li>Basic Salary: K8,500</li>
+            <li>Overtime: K500</li>
+            <!-- Add more earnings items as needed -->
+        </ul>
+    </div>
+    <div class="deductions">
+        <p><strong>Deductions:</strong></p>
+        <ul>
+            <li>Taxes: K800</li>
+            <li>Health Insurance: K300</li>
+            <!-- Add more deduction items as needed -->
+        </ul>
+    </div>
+    <div class="total">
+        <p><strong>Total Payment:</strong> $7,500</p>
+    </div>
+</div>
+<div class="payslip">
+    <div class="employee-info">
+        <p><strong>Employee Name:</strong> Kitopi jalous</p>
+        <p><strong>Employee ID:</strong> 242376</p>
+        <p><strong>Payment Date:</strong> october 5, 2023</p>
+    </div>
+    <div class="earnings">
+        <p><strong>Earnings:</strong></p>
+        <ul>
+            <li>Basic Salary: K9,500</li>
+            <li>Overtime: K400</li>
+            <!-- Add more earnings items as needed -->
+        </ul>
+    </div>
+    <div class="deductions">
+        <p><strong>Deductions:</strong></p>
+        <ul>
+            <li>Taxes: K800</li>
+            <li>Health Insurance: K300</li>
+            <!-- Add more deduction items as needed -->
+        </ul>
+    </div>
+    <div class="total">
+        <p><strong>Total Payment:</strong> $7,500</p>
+    </div>
+</div>
+<div class="payslip">
+    <div class="employee-info">
+        <p><strong>Employee Name:</strong> Monga Abel</p>
+        <p><strong>Employee ID:</strong> 012375</p>
+        <p><strong>Payment Date:</strong> November 3, 2023</p>
+    </div>
+    <div class="earnings">
+        <p><strong>Earnings:</strong></p>
+        <ul>
+            <li>Basic Salary: K9,000</li>
+            <li>Overtime: K500</li>
+            <!-- Add more earnings items as needed -->
+        </ul>
+    </div>
+    <div class="deductions">
+        <p><strong>Deductions:</strong></p>
+        <ul>
+            <li>Taxes: K800</li>
+            <li>Health Insurance: K300</li>
+            <!-- Add more deduction items as needed -->
+        </ul>
+    </div>
+    <div class="total">
+        <p><strong>Total Payment:</strong> $7,500</p>
+    </div>
+</div>
+<div class="payslip">
+    <div class="employee-info">
+        <p><strong>Employee Name:</strong> Mapulanga Demian</p>
+        <p><strong>Employee ID:</strong> 045375</p>
+        <p><strong>Payment Date:</strong> November 10, 2023</p>
+    </div>
+    <div class="earnings">
+        <p><strong>Earnings:</strong></p>
+        <ul>
+            <li>Basic Salary: K7,000</li>
+            <li>Overtime: K500</li>
+            <!-- Add more earnings items as needed -->
+        </ul>
+    </div>
+    <div class="deductions">
+        <p><strong>Deductions:</strong></p>
+        <ul>
+            <li>Taxes: K800</li>
+            <li>Health Insurance: K300</li>
+            <!-- Add more deduction items as needed -->
+        </ul>
+    </div>
+    <div class="total">
+        <p><strong>Total Payment:</strong> $10,500</p>
+    </div>
+</div>
+<div class="payslip">
+    <div class="employee-info">
+        <p><strong>Employee Name:</strong> Kabwe Jack</p>
+        <p><strong>Employee ID:</strong> 056775</p>
+        <p><strong>Payment Date:</strong> october 7, 2023</p>
+    </div>
+    <div class="earnings">
+        <p><strong>Earnings:</strong></p>
+        <ul>
+            <li>Basic Salary: K7,400</li>
+            <li>Overtime: K300</li>
+            <!-- Add more earnings items as needed -->
+        </ul>
+    </div>
+    <div class="deductions">
+        <p><strong>Deductions:</strong></p>
+        <ul>
+            <li>Taxes: K800</li>
+            <li>Health Insurance: K300</li>
+            <!-- Add more deduction items as needed -->
+        </ul>
+    </div>
+    <div class="total">
+        <p><strong>Total Payment:</strong> $8,500</p>
+    </div>
+
+</body>
+</html>
+
+
+
+

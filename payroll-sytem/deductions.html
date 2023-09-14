@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Salary Deductions Calculator</title>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .deduction {
+            background-color: #fff;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Salary Deductions Calculator</h1>
+
+    <div class="deduction">
+        <form id="salaryForm">
+            <label for="salary">Enter Salary:</label>
+            <input type="number" id="salary" required>
+            <br>
+            <label for="taxRate">Tax Rate (%):</label>
+            <input type="number" id="taxRate" required>
+            <br>
+            <button type="button" onclick="calculateDeductions()">Calculate Deductions</button>
+        </form>
+    </div>
+   
+
+    <div id="result"></div>
+
+    <script>
+        function calculateDeductions() {
+            const salary = parseFloat(document.getElementById("salary").value);
+            const taxRate = parseFloat(document.getElementById("taxRate").value);
+
+            if (isNaN(salary) || isNaN(taxRate)) {
+                alert("Please enter valid numbers for Salary and Tax Rate.");
+                return;
+            }
+
+            const deductions = (salary * (taxRate / 100)).toFixed(2);
+            const netSalary = (salary - deductions).toFixed(2);
+
+            const resultText = `
+                <h2>Salary Deducted is:</h2>
+                <p>Salary: $${salary}</p>
+                <p>Tax Rate: ${taxRate}%</p>
+                <p>Deductions: $${deductions}</p>
+                <p>Net Salary: $${netSalary}</p>
+            `;
+
+            document.getElementById("result").innerHTML = resultText;
+        }
+    </script>
+</body>
+</html>
